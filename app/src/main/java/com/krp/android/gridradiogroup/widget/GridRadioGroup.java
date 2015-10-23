@@ -3,18 +3,17 @@ package com.krp.android.gridradiogroup.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.annotation.IdRes;
+import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
-import android.widget.GridLayout;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 import com.krp.android.gridradiogroup.R;
 
 /**
- * Created by root on 17/10/15.
+ * Created by purushottam.kumar on 17/10/15.
  */
 public class GridRadioGroup extends GridLayout {
     // holds the checked id; the selection is empty by default
@@ -58,7 +57,7 @@ public class GridRadioGroup extends GridLayout {
      * {@inheritDoc}
      */
     @Override
-    public void setOnHierarchyChangeListener(OnHierarchyChangeListener listener) {
+    public void setOnHierarchyChangeListener(ViewGroup.OnHierarchyChangeListener listener) {
         // the user listener is delegated to our pass-through listener
         mPassThroughListener.mOnHierarchyChangeListener = listener;
     }
@@ -196,11 +195,6 @@ public class GridRadioGroup extends GridLayout {
         return new LayoutParams();
     }
 
-    @Override
-    public CharSequence getAccessibilityClassName() {
-        return GridRadioGroup.class.getName();
-    }
-
     public static class LayoutParams extends GridLayout.LayoutParams {
         /**
          * {@inheritDoc}
@@ -226,7 +220,7 @@ public class GridRadioGroup extends GridLayout {
         /**
          * {@inheritDoc}
          */
-        public LayoutParams(MarginLayoutParams source) {
+        public LayoutParams(ViewGroup.MarginLayoutParams source) {
             super(source);
         }
 
