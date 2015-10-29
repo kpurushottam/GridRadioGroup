@@ -57,7 +57,7 @@ public class GridRadioGroup extends GridLayout {
      * {@inheritDoc}
      */
     @Override
-    public void setOnHierarchyChangeListener(ViewGroup.OnHierarchyChangeListener listener) {
+    public void setOnHierarchyChangeListener(OnHierarchyChangeListener listener) {
         // the user listener is delegated to our pass-through listener
         mPassThroughListener.mOnHierarchyChangeListener = listener;
     }
@@ -220,7 +220,7 @@ public class GridRadioGroup extends GridLayout {
         /**
          * {@inheritDoc}
          */
-        public LayoutParams(ViewGroup.MarginLayoutParams source) {
+        public LayoutParams(MarginLayoutParams source) {
             super(source);
         }
 

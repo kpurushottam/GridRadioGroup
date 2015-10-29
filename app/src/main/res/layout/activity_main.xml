@@ -1,111 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:columnCount="3">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 1"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 2"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 3"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 4"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 5"/>
-    </GridLayout>
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="12dp"
+    android:elevation="10dp">
 
     <com.krp.android.gridradiogroup.widget.GridRadioGroup
+        android:id="@+id/rg_buying_src"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:columnCount="3">
+        android:background="@android:color/white"
+        android:padding="20dp"
+        app:columnCount="2"
+        app:orientation="horizontal"
+        app:useDefaultMargins="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Source"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp"
+            app:layout_columnSpan="2" />
+
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 1"/>
+            android:button="@drawable/selector_radio_circle_btn"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Carwale.com"
+            android:textSize="14sp"
+            app:layout_columnWeight="1" />
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 2"/>
+            android:button="@drawable/selector_radio_circle_btn"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Web Sites"
+            android:textSize="14sp"
+            app:layout_columnWeight="1" />
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 3"/>
+            android:button="@drawable/selector_radio_circle_btn"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="CarTrade.com"
+            android:textSize="14sp"
+            app:layout_columnWeight="1" />
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:button="@null"
-            android:drawableTop="@drawable/selector_radio_btn_img"
-            android:textColor="@drawable/selector_radio_btn_text"
-            android:text="Button 4"/>
+            android:button="@drawable/selector_radio_circle_btn"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Gaadi.com"
+            android:textSize="14sp"
+            app:layout_columnWeight="1" />
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:button="@null"
-            android:drawableTop="@drawable/selector_radio_btn_img"
-            android:textColor="@drawable/selector_radio_btn_text"
-            android:text="Button 5"/>
+            android:button="@drawable/selector_radio_circle_btn"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Walking"
+            android:textSize="14sp"
+            app:layout_columnWeight="1" />
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:button="@null"
-            android:drawableTop="@drawable/selector_radio_btn_img"
-            android:textColor="@drawable/selector_radio_btn_text"
-            android:text="Button 1"/>
+            android:button="@drawable/selector_radio_circle_btn"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="TV Adv"
+            android:textSize="14sp"
+            app:layout_columnWeight="1" />
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 2"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 3"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 4"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 5"/>
+            android:button="@drawable/selector_radio_circle_btn"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Other Sources"
+            android:textSize="14sp"
+            app:layout_columnWeight="1" />
     </com.krp.android.gridradiogroup.widget.GridRadioGroup>
-</LinearLayout>
+</android.support.v7.widget.CardView>
